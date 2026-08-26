@@ -41,7 +41,7 @@ export const defaultSiteSettings: SiteSettings = {
   address: "",
   city: "",
   phone: "",
-  whatsapp: "6285899258184",
+  whatsapp: "6287838641927",
   email: "",
   business_hours: "",
   google_maps_url: "",

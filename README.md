@@ -61,7 +61,7 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=628xxxxxxxxxx
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
-Nomor WhatsApp gunakan format internasional tanpa `+`, contoh `6285899258184`.
+Nomor WhatsApp gunakan format internasional tanpa `+`, contoh `6287838641927`.
 
 ## 4. Buat akun admin
 

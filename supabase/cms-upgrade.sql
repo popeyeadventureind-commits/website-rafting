@@ -35,7 +35,7 @@ create table if not exists public.site_settings (
   address text not null default '',
   city text not null default '',
   phone text not null default '',
-  whatsapp text not null default '6285899258184',
+  whatsapp text not null default '6287838641927',
   email text not null default '',
   business_hours text not null default '',
   google_maps_url text not null default '',
