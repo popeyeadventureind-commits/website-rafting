@@ -108,7 +108,7 @@ create table public.site_settings (
   feature_4_title text not null default 'Cocok untuk Grup', feature_4_description text not null default 'Tersedia pilihan untuk keluarga, sekolah, komunitas, dan perusahaan.',
   business_description text not null default 'Rafting, VW Tour, outbound, dan wisata petualangan dalam satu tempat.',
   address text not null default '', city text not null default '', phone text not null default '',
-  whatsapp text not null default '6281234567890', email text not null default '', business_hours text not null default '',
+  whatsapp text not null default '6285899258184', email text not null default '', business_hours text not null default '',
   google_maps_url text not null default '', instagram_url text not null default '', tiktok_url text not null default '',
   facebook_url text not null default '', youtube_url text not null default '',
   footer_text text not null default 'Rafting · VW Tour · Outbound · Adventure',

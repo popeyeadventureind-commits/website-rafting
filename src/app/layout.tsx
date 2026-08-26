@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const s = await getSiteSettings();
-  const whatsapp = (s.whatsapp || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890").replace(/\D/g, "");
+  const whatsapp = (s.whatsapp || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285899258184").replace(/\D/g, "");
   return (
     <html lang="id">
       <body>

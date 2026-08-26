@@ -3,6 +3,7 @@
 Website profil/promosi usaha wisata dengan layanan dinamis (Rafting, VW Tour, Outbound, dst), admin CMS, paket, booking database, dan redirect WhatsApp.
 
 ## Versi ini: customer TANPA login
+
 Customer tidak perlu registrasi atau login. Alurnya:
 
 1. Buka website.
@@ -14,6 +15,7 @@ Customer tidak perlu registrasi atau login. Alurnya:
 Login hanya tersedia untuk admin di `/admin/login`.
 
 ## Fitur
+
 - Public homepage modern dan responsive.
 - Daftar layanan dinamis dari Supabase.
 - URL otomatis berdasarkan slug, contoh `/services/vw-tour`.
@@ -29,11 +31,13 @@ Login hanya tersedia untuk admin di `/admin/login`.
 - Siap deploy ke Vercel.
 
 ## 1. Install
+
 ```bash
 npm install
 ```
 
 ## 2. Buat Supabase project
+
 Untuk project baru, buka SQL Editor lalu jalankan seluruh isi:
 
 ```text
@@ -47,6 +51,7 @@ supabase/cms-upgrade.sql
 ```
 
 ## 3. Environment
+
 Copy `.env.example` menjadi `.env.local` lalu isi:
 
 ```env
@@ -56,9 +61,10 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=628xxxxxxxxxx
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
-Nomor WhatsApp gunakan format internasional tanpa `+`, contoh `6281234567890`.
+Nomor WhatsApp gunakan format internasional tanpa `+`, contoh `6285899258184`.
 
 ## 4. Buat akun admin
+
 Supabase Dashboard > Authentication > Users > Add user.
 
 Setelah user dibuat, pastikan profilnya ada dan role admin. Jika tabel `profiles` masih kosong, jalankan (ganti email):
@@ -81,11 +87,13 @@ where email = 'admin@email.com';
 ```
 
 ## 5. Jalankan
+
 ```bash
 npm run dev
 ```
 
 Buka:
+
 - Public: `http://localhost:3000`
 - Booking: `http://localhost:3000/booking`
 - Admin login: `http://localhost:3000/admin/login`
@@ -95,9 +103,11 @@ Buka:
 Tidak ada route login/register customer pada versi ini.
 
 ## Menambahkan VW Tour / layanan baru
+
 Admin > Layanan > Tambah Layanan.
 
 Contoh:
+
 - Nama: VW Tour
 - Slug: `vw-tour`
 - Kategori: Tour
@@ -108,7 +118,9 @@ Contoh:
 Setelah disimpan, halaman otomatis tersedia di `/services/vw-tour`.
 
 ## Pengaturan Website
+
 Menu `Admin > Pengaturan Website` dapat mengubah:
+
 - Nama usaha dan tulisan brand
 - Logo
 - Hero title, subtitle, deskripsi, background
@@ -124,9 +136,11 @@ Menu `Admin > Pengaturan Website` dapat mengubah:
 Nomor WhatsApp pada database dipakai otomatis oleh tombol WhatsApp dan form booking.
 
 ## Catatan database versi sebelumnya
+
 Kolom `bookings.user_id` boleh tetap ada. Versi ini selalu menyimpan `user_id = NULL` karena customer tidak login. Jadi Anda tidak perlu mengubah database hanya untuk mengganti source code ini.
 
 ## Deploy Vercel
+
 1. Push repository ke GitHub.
 2. Import project di Vercel.
 3. Tambahkan environment variables.
@@ -134,6 +148,7 @@ Kolom `bookings.user_id` boleh tetap ada. Versi ini selalu menyimpan `user_id = 
 5. Ubah `NEXT_PUBLIC_SITE_URL` ke domain production.
 
 ## Keamanan
+
 - Jangan pernah menaruh service-role key pada variabel `NEXT_PUBLIC_*`.
 - Public hanya boleh membuat booking baru, bukan membaca semua booking.
 - Admin layout mengecek session dan role server-side.

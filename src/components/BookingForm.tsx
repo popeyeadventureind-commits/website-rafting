@@ -50,7 +50,7 @@ export default function BookingForm({ services, packages, defaultServiceId = "",
       "",
       "Mohon informasi ketersediaannya. Terima kasih."
     ].join("\n");
-    const number = (whatsappNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6281234567890").replace(/\D/g, "");
+    const number = (whatsappNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6285899258184").replace(/\D/g, "");
     window.location.href = `https://wa.me/${number}?text=${encodeURIComponent(msg)}`;
   }
 
