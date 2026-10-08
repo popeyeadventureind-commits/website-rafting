@@ -10,8 +10,8 @@ export async function saveSiteSettings(fd: FormData) {
   const { supabase } = await requireAdmin();
   const payload = {
     id: 1,
-    site_name: text(fd, "site_name") || "Arus Adventure",
-    brand_label: text(fd, "brand_label") || text(fd, "site_name") || "Arus Adventure",
+    site_name: text(fd, "site_name") || "Popeye Adventure",
+    brand_label: text(fd, "brand_label") || text(fd, "site_name") || "Popeye Adventure",
     logo_url: text(fd, "logo_url") || null,
     hero_eyebrow: text(fd, "hero_eyebrow"),
     hero_title: text(fd, "hero_title"),

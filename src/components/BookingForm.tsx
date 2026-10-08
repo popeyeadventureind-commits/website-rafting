@@ -9,7 +9,7 @@ export default function BookingForm({
   packages,
   defaultServiceId = "",
   whatsappNumber = "",
-  siteName = "Arus Adventure",
+  siteName = "Popeye Adventure",
 }: {
   services: Service[];
   packages: Package[];

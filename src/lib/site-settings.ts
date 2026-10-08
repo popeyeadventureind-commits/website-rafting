@@ -4,7 +4,7 @@ import type { SiteSettings } from "@/lib/types";
 
 export const defaultSiteSettings: SiteSettings = {
   id: 1,
-  site_name: "Arus Adventure",
+  site_name: "Popeye Adventure",
   brand_label: "ARUS.ADVENTURE",
   logo_url: null,
   hero_eyebrow: "Adventure & Tourism Experience",
@@ -50,7 +50,7 @@ export const defaultSiteSettings: SiteSettings = {
   facebook_url: "",
   youtube_url: "",
   footer_text: "Rafting · VW Tour · Outbound · Adventure",
-  seo_title: "Arus Adventure",
+  seo_title: "Popeye Adventure",
   seo_description: "Rafting, VW Tour, outbound, dan wisata petualangan dalam satu tempat.",
   updated_at: null,
 };

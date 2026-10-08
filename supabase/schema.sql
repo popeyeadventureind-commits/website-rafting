@@ -1,5 +1,5 @@
 -- =========================================================
--- ARUS ADVENTURE - Supabase schema
+-- Popeye Adventure - Supabase schema
 -- Jalankan seluruh file ini di Supabase > SQL Editor.
 -- =========================================================
 
@@ -81,7 +81,7 @@ create table public.bookings (
 
 create table public.site_settings (
   id smallint primary key default 1 check (id = 1),
-  site_name text not null default 'Arus Adventure',
+  site_name text not null default 'Popeye Adventure',
   brand_label text not null default 'ARUS.ADVENTURE',
   logo_url text,
   hero_eyebrow text not null default 'Adventure & Tourism Experience',
@@ -112,7 +112,7 @@ create table public.site_settings (
   google_maps_url text not null default '', instagram_url text not null default '', tiktok_url text not null default '',
   facebook_url text not null default '', youtube_url text not null default '',
   footer_text text not null default 'Rafting · VW Tour · Outbound · Adventure',
-  seo_title text not null default 'Arus Adventure',
+  seo_title text not null default 'Popeye Adventure',
   seo_description text not null default 'Rafting, VW Tour, outbound, dan wisata petualangan dalam satu tempat.',
   updated_at timestamptz not null default now()
 );

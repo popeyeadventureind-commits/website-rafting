@@ -1,4 +1,4 @@
-# Arus Adventure - Next.js + Supabase CMS
+# Popeye Adventure - Next.js + Supabase CMS
 
 Website profil/promosi usaha wisata dengan layanan dinamis (Rafting, VW Tour, Outbound, dst), admin CMS, paket, booking database, dan redirect WhatsApp.
 
